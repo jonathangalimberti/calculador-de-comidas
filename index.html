@@ -5,23 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="/index.js"></script>
+    <script src="/calculador-de-comidas/index.js"></script>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <h1>calcualdor de comidas</h1>
-    <h2>selecciona el menu a calcular</h2>
-
-    <div>
-        <button id="menu1" >menu 1</button>
-        <button id="menu2 ">menu 2</button>
-        <button id="menu3">menu 3</button>
-        <button id="menu4">menu 4</button>
-        <button id="menu5">menu 5</button>
+    <div class="titulos">
+        <h1>calcualdor de comidas</h1>
+        <h2 id="seleccionar-menu">selecciona el menu</h2>
+        <h2 id="seleccionar-porciones">selecciona las porciones y cantidad de semanas</h2>
     </div>
-    <form action="" id="inputs">
-        <input type="number"  id="inputporciones" placeholder="cantidad de porciones">
-        <input type="number"  id="inputsemanas" placeholder="cantidad de semanas">
-    </form>
-    <p id="detalle-menu"></p>
+    <div class="contenedor-menu">
+        <div class="botones-menu" id="botones">
+            <button id="menu1" >menu 1</button>
+            <button id="menu2 ">menu 2</button>
+            <button id="menu3">menu 3</button>
+            <button id="menu4">menu 4</button>
+            <button id="menu5">menu 5</button>
+        </div>
+        <form action="" id="inputs">
+            <input type="number"  id="inputporciones" placeholder="cantidad de porciones">
+            <input type="number"  id="inputsemanas" placeholder="cantidad de semanas">
+            <button type="button" id="aceptar">aceptar</button>
+        </form>
+    </div>
+    <div class="titulos-columnas" id="titulos-de-columnas">
+        <p class="parrafo-titulos1">ingredientes</p>
+        <p class="parrafo-titulos">por porcion</p>
+        <p class="parrafo-titulos">total para <span id="cantidad de semanas"></span>semanas</p>
+    </div>
+    <section id="seccion-mensajes">
+        
+            <p id="detalle-menu" class="parrafo-titulos1"></p>
+            <p id="cantidades-menu" class="parrafo-titulos"></p>
+            <p id="resultado-calculo" class="parrafo-titulos"></p>
+    </section>
 </body>
 </html>
