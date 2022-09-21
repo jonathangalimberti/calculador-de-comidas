@@ -3,7 +3,7 @@ const { map } = require("johnny-five/lib/board")
 window.addEventListener("load",iniciarCalculo)
 let menu1={
     ing1:"palta",
-    cantidad1:20,
+    cantidad1:25,
     ing2:"pan",
     cantidad2:50,
     ing3:"rucula",
