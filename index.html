@@ -10,28 +10,29 @@
 </head>
 <body>
     <div class="titulos">
-        <h1>calcualdor de comidas</h1>
-        <h2 id="seleccionar-menu">selecciona el menu</h2>
-        <h2 id="seleccionar-porciones">selecciona las porciones y cantidad de semanas</h2>
+        <h1>Calcualdor de comidas</h1>
+        <h2 id="seleccionar-menu">Selecciona el menu</h2>
+        <h2 id="seleccionar-porciones">Selecciona las porciones y cantidad de semanas</h2>
     </div>
     <div class="contenedor-menu">
         <div class="botones-menu" id="botones">
-            <button id="menu1" >menu 1</button>
-            <button id="menu2 ">menu 2</button>
-            <button id="menu3">menu 3</button>
-            <button id="menu4">menu 4</button>
-            <button id="menu5">menu 5</button>
+            <button id="menu1" class="botones-seleccion-menu">Crema de verduras y legumbres</button>
+            <button id="menu2" class="botones-seleccion-menu">Brocoli con patatas</button>
+            <button id="menu3" class="botones-seleccion-menu">Ensalada de espinacas</button>
+            <button id="menu4" class="botones-seleccion-menu">Crema de zanahorias</button>
+            <button id="menu5" class="botones-seleccion-menu">Ensalada de arroz casera</button>
+            <button id="menu6" class="botones-seleccion-menu">Ensalada de pollo</button>
         </div>
         <form action="" id="inputs">
             <input type="number"  id="inputporciones" placeholder="cantidad de porciones">
             <input type="number"  id="inputsemanas" placeholder="cantidad de semanas">
-            <button type="button" id="aceptar">aceptar</button>
+            <button type="button" id="aceptar">Aceptar</button>
         </form>
     </div>
     <div class="titulos-columnas" id="titulos-de-columnas">
-        <p class="parrafo-titulos1">ingredientes</p>
-        <p class="parrafo-titulos">por porcion</p>
-        <p class="parrafo-titulos">total para <span id="cantidad de semanas"></span>semanas</p>
+        <p class="parrafo-titulos1">Ingredientes</p>
+        <p class="parrafo-titulos">Por porcion</p>
+        <p class="parrafo-titulos">Total para <span id="cantidad-de-semanas"></span> semanas</p>
     </div>
     <section id="seccion-mensajes">
         
@@ -39,5 +40,8 @@
             <p id="cantidades-menu" class="parrafo-titulos"></p>
             <p id="resultado-calculo" class="parrafo-titulos"></p>
     </section>
+    <div class="boton-reiniciar">
+    <button type="button" id="reiniciar">Reiniciar calculo</button>
+    </div>
 </body>
 </html>

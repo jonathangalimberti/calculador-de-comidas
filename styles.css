@@ -1,31 +1,52 @@
 html{
     display: grid;
-    /* align-items: center; */
+    align-items: center;
     justify-items: center;
-    align-content: center
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    background-image: url("https://img.freepik.com/vector-premium/vector-coleccion-vegetales-dibujos-animados-lindo_540634-21.jpg?w=2000");
+    
 }
 body{
-    display: grid;
-    /* justify-content: space-evenly; */
+   
     align-items: center;
     justify-items: center;
     width: 800px;
-    align-content: space-evenly;}
+    align-content: space-evenly;
+    border: solid limegreen;
+    border-radius: 16px;
+    content-visibility: auto;
+}
+
+div, section{
+   
+    background-color: RGB( 224, 255, 255,0.5);
+    width: 100%;
+}
 .titulos{
     display: flex;
     align-content: space-around;
     align-items: center;
     justify-content: space-evenly;
-    margin: 20px;
+    /* margin: 20px; */
     flex-direction: column;
     text-align: center;
+   /*  background-color: lightcyan; */
+    width: 100%;
 }
 .botones-menu,.inputs{
-    display: flex;
-    align-content: space-around;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
     align-items: center;
-    margin: 25px;
+    margin: 0;
+    width: 100%;
+}
+.botones-seleccion-menu{
+    margin: 6px 50px;
+    border-radius: 12px;
+    height: 25px;
 }
 #inputs{
     text-align: center;
@@ -56,6 +77,29 @@ section{
 .parrafo-titulos1{
     width: 300px;
     text-align: start;
-   
+    padding: 0px 0px 0px 10px;
 }
 
+.boton-reiniciar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 10px;
+}
+
+#reiniciar{
+    height: 50px;
+    width: 160px;
+    border-radius: 50px;
+}
+
+#aceptar{
+    height: 25px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+#inputporciones, #inputsemanas{
+    height: 25px;
+}
