@@ -35,7 +35,17 @@ div, section{
    /*  background-color: lightcyan; */
     width: 100%;
 }
-.botones-menu,.inputs{
+.botones-menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    background-color: RGB( 224, 255, 255,0);
+
+}
+.inputs{
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
